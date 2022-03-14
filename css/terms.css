@@ -1,0 +1,1003 @@
+@charset "utf-8";
+/* CSS Document */
+/* ============== REGISTRO =================== */
+body{
+    font:90% "Open Sans", Arial, sans-serif;
+}
+.contenido{
+    overflow: hidden;
+}
+/* ============== CABECERA =================== */
+.quienes, .tucuenta{
+    color: #333;
+    font-size: 90%;
+}
+
+.cabecera{
+    padding: 20px 0px;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px #CCCCCC solid;
+    margin: 0 0 20px 0;
+    -moz-box-shadow: 0 6px 15px -15px #999999;
+    -webkit-box-shadow: 0 6px 15px -15px #999999;
+    box-shadow: 0 6px 15px -15px #999999;
+    overflow: hidden;
+    width: 100%;
+}
+.icon {
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+}
+
+/* ============== TITULOS =================== */
+.contenido > h1, h1{
+    font: 250% "Roboto Condensed",Arial,sans-serif;
+    width: 100%;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h1.tit_tucuenta{
+    font: 130% "Roboto Condensed",Arial,sans-serif;
+    margin-bottom: 10px !important;
+}
+
+h2{
+    font: 200% "Roboto Condensed",Arial,sans-serif;
+    width: 100%;
+    color: #555555;
+    border-bottom: double #cccccc 4px; 
+    margin: 0 0 10px;
+}
+
+h3{
+    font: 120% "Roboto Condensed",Arial,sans-serif;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.tit-registro-cuenta{
+    font: 200% "Roboto Condensed",Arial,sans-serif;
+    width: 100%;
+}
+
+legend{
+    display: block;
+    width: 100%;
+}
+
+.subtit-cuenta, .subtit-pagos{
+    font: 150% "Roboto Condensed",Arial,sans-serif;
+    margin: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+    display: block;
+    -webkit-margin-top-collapse: separate;
+}
+
+.Registrate h1, .Baja h1, .Clavecambio h1, .Claveconfirmacion h1, .Clave h1{
+    border-bottom: double #cccccc 4px;
+    margin: 0 0 20px;
+}
+
+.tit-registro-cuenta{
+    border-bottom: double #cccccc 4px;
+    margin: 0 0 20px;
+    width: 100%;
+    margin-bottom-collapse: separate;          /* Opera/IE 8+ */
+    -webkit-margin-bottom-collapse: separate;  /* Safari/Chrome, other WebKit */
+    -moz-margin-bottom-collapse: separate;     /* Firefox, other Gecko */
+}
+
+/* ============== TEXTOS =================== */
+.text-norecibir{
+    display: inline-block;
+}
+
+.nusuario{
+    font-size: 90%;
+}
+
+.color1{
+    color: #AAAAAA;
+}
+
+/* ============== ENLACES =================== */
+a {
+    color: #3C81A2;
+}
+
+a:hover{
+    color: #990044;
+}
+
+/* ================ TU CUENTA =========== */
+.alertmin{
+    font-size: 75%;
+    color: #999999;
+    font-size: 85%;
+}
+
+#conlegales{
+    border-top: 1px solid #CCCCCC;
+    padding: 20px 10px;
+    color: #888888;
+}
+
+#conlegales p{
+    border-bottom: 4px;
+}
+
+/* ================ QUIENES SOMOS =========== */
+#logosquienes li{
+    margin-bottom: 50px;
+}
+
+/* ============== CAPA DE MENSAJES ERROR ============= */
+#mensaje_error, #mensaje_uso, #mensaje_aviso, #mensaje_avatar, #mensaje_ok {
+    line-height: 16px;
+    margin: 0 0 11px;
+    min-height: 16px;
+    padding: 12px 10px 2px 41px;
+    position: relative;
+}
+
+#mensaje_error, #mensaje_uso {
+    background: url("img/icon-error.png") no-repeat scroll 16px 13px #FFE6E5;
+    border-color: #FAD2D4;
+    border: 1px solid #F2F2F2;
+    color: #DD5A58;
+}
+
+#mensaje_aviso {
+    background:url("img/icon-info.png") no-repeat 14px 13px #deefff;
+    border-color:#c4ddf6;
+    border: 1px solid #F2F2F2;
+    color: #499ABF;  
+}
+
+#mensaje_ok {
+    background:url("img/icon-ok.png") no-repeat 14px 13px #E9F7D2;
+    border-color:#c4ddf6;
+    border: 1px solid #F2F2F2;
+    color: #7B9C46;  
+}
+
+#mensaje_codigo {
+    background-color:#E9F7D2;
+    border-color:#c4ddf6;
+    border: 1px solid #F2F2F2;
+    text-align: center;
+}
+
+#mensaje_avatar{
+    color: #DEA803;
+    background: url("img/icon-aviso.png") no-repeat scroll 14px 14px #FFFAE0;
+    border-color: #F9E495;
+}
+
+span.nodisponible {
+    background: url("img/icon-error.png") no-repeat scroll 16px 10px #FFE6E5;
+    border: 1px solid #F2F2F2;
+    color: #DD5A58;
+    line-height: 16px;
+    margin: 0 0 11px 190px;
+    min-height: 16px;
+    padding: 10px 0 24px 41px;
+    position: relative;
+}
+span.disponible, span.nodisponible {
+    display: block;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    height: 16px;
+    width: 450px;
+}
+
+#mensaje_error p, #mensaje_uso p, #mensaje_aviso p, #mensaje_avatar p, #mensaje_ok p{
+    margin-bottom: 10px
+}
+
+#mensaje_error h5{
+    font: 120% "Roboto Condensed",Arial,sans-serif;
+    color: #DD5A58;
+}
+
+#error_otros {
+    text-align: center;
+}
+
+/* =========================== REGISTRO SEGURIDAD CONTRASEÃ'A ===================== */
+span.seguridad {
+    display: block;
+    float: right;
+    height: 22px;
+    line-height: 11px;
+    margin-left: 6px;
+    text-align: left;
+    width: 160px;
+}
+span.nivel1 {
+    background: url("img/icono-seguridad-1.gif") no-repeat scroll left bottom transparent;
+    color: #FF0000;
+}
+span.nivel2 {
+    background: url("img/icono-seguridad-2.gif") no-repeat scroll left bottom transparent;
+    color: #FF0000;
+}
+span.nivel3 {
+    background: url("img/icono-seguridad-3.gif") no-repeat scroll left bottom transparent;
+    color: #FF9600;
+}
+span.nivel4 {
+    background: url("img/icono-seguridad-4.gif") no-repeat scroll left bottom transparent;
+    color: #006600;
+}
+span.nivel5 {
+    background: url("img/icono-seguridad-5.gif") no-repeat scroll left bottom transparent;
+    color: #006600;
+}
+
+.inputfloat {
+    float: left;
+}
+
+#calendarDiv, #calendarDiv * {
+    box-sizing: content-box;         /* Opera/IE 8+ */
+    -webkit-box-sizing: content-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: content-box;    /* Firefox, other Gecko */
+    
+}
+
+div#calendarDiv div table{
+    margin: 0;
+}
+
+/* ============================== FORMULARIOS =========================== */
+#fregistro, #fmailcambiopass, #fcambiopass, #flogin{
+    width: 660px;
+    margin: 0 auto;
+}
+.text-lbl, .text-lbl-pq {
+    color: #999999;
+    height: 32px;
+    margin: 0 10px;
+    padding: 5px 10px 0 0;
+    text-align: right;
+}
+
+.text-lbl{
+    float: left;
+    width: 170px;
+}
+
+.text-lbl-pq {
+    float: none;
+    display: inline-block;
+    width: 122px;
+    text-align: right;
+}
+
+input.caja-inp, select.caja-inp {
+    border: 1px solid #CCCCCC;
+    width: 450px;
+    margin: 0 0 20px;
+    padding: 5px;
+    height: 35px;
+    font-size: 90%;
+}
+
+input.caja-inp1{
+    border: 1px solid #CCCCCC;
+    width: 410px;
+    margin: 0 0 20px;
+    padding: 5px;
+    height: 35px;
+}
+
+input.caja-inp2{
+    border: 1px solid #CCCCCC;
+    width: 250px;
+    margin: 0 0 20px;
+    padding: 5px;
+    height: 35px;
+    font-size: 90%;
+}
+
+input.submit-btn{
+    background-color: #333333;
+    background-image: none;
+    border: none;
+    border-radius: 0px;
+    float: none;
+    margin: 5px auto 20px;
+    padding: 8px 40px;
+    color: #FFFFFF;
+    font-weight: bold;
+    display: block;
+    font-size: 90%;
+}
+
+input.submit-btn:hover{
+    background-color: #666666;
+}
+
+.boton{
+    background-color: #333333;
+    background-image: none;
+    border: none;
+    border-radius: 0px;
+    float: none;
+    margin: 5px auto 20px;
+    padding: 8px 40px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.boton:hover{
+    background-color: #666666;
+    color: #FFFFFF;
+}
+
+.Cuenta input.submit-btn{
+    margin: 5px auto 30px;
+}
+
+input.caja-inp-pq, select.caja-inp-pq {
+    border: 1px solid #CCCCCC;
+    width: 150px;
+    margin: 0 0 20px;
+    padding: 5px;
+    height: 35px;
+    font-size: 90%;
+}
+
+.genero{
+    width: 100%;
+    padding: 0 0 20px 180px;
+    margin: 0 0 10px;
+}
+
+.radio1{
+    margin: 0 10px 0 10px;
+    width: 20px;
+}
+
+.checkb{
+    width: 20px;
+    margin: 5px 4px 5px 0;
+}
+
+#norecibir p{
+    line-height: 100%;
+    margin-bottom: 0px;
+}
+
+#norecibir{
+    margin-bottom: 20px;
+}
+
+p.text-cambiopass{
+    margin: 0 0 0 200px;
+}
+
+/* ---------- Avatar --------- */
+a.galeria,a.avatar{
+    margin: 10px;
+    float: right;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.img-avatar img{
+    margin: 10px auto;
+}
+
+#preapproved img {
+    border: 2px solid #FFFFFF;
+}
+
+#preapproved img:hover {
+    border: 2px solid #555555;
+    }
+
+#preapproved, #preapproved input, #preapproved input {
+    display: none;
+    float: left;
+}
+
+.enlace-btn{
+    color: #FFFFFF;
+    padding: 8px 20px;
+    background-color: #333333;
+    font-weight: bold;
+    font-family: "Roboto",Helvetica,sans-serif;
+}
+
+.enlace-btn:hover{
+    color: #FFFFFF;
+    background-color: #666666;
+}
+
+.text-cuenta .enlace-btn{
+    margin: 20px 50px 0 0;
+}
+
+.btn_center{
+    margin: 80px 0;
+    text-align: center;
+}
+
+
+/* ============================== MENU =========================== */
+nav ul{
+    width: 80%;
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+nav ul li{
+    background: none repeat scroll 0 0 #666666;
+    float: none;
+    margin: 0 0 3px;
+    padding: 8px 0;
+    font: 100% "Open Sans",Arial,sans-serif;
+}
+
+nav ul li a{
+    color: #FFFFFF;
+    display: block;
+    padding: 0 0 0 10px;
+}
+
+nav ul li a:hover{
+    color: #FFFFFF;
+}
+
+nav ul li:hover{
+    background: none repeat scroll 0 0 #555555;
+}
+
+.selec-mn{
+    color: #999999;
+}
+
+
+/* ============================== FOOTER =========================== */
+.Agradecimiento .pie-portal{
+    position: fixed;
+    bottom: 0;
+}
+
+.pie-portal{
+    border-top: 6px solid #333333;
+    clear: both;
+    font-size: 12px;
+    margin: 30px 0 10px;
+    overflow: hidden;
+    padding: 10px 0 0;
+    width: 1029px;
+}
+
+.pie-ue{
+        float: left;;
+    }
+
+.btn-movil{
+    text-align: right;
+}
+
+/* ============================== PAYWALL =========================== */
+/* ---------- Compra-registro --------- */
+ul#tcliente, ul#dpagos{
+    float: none;
+    overflow: hidden;
+}
+
+ul#tcliente li, ul#dpagos li{
+    float: left;
+    margin: 10px;
+}
+
+.btn_activo {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.btn_activo:hover {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.btn_inactivo {
+    background-color: #F2F2F2;
+    padding: 10px;
+}
+
+.secondItem{
+    float: right;
+    text-align: left;
+    width: 300px;
+}
+
+#tipocliente{
+    margin: 0 0 15px;
+}
+
+#usuario{
+    text-align: center;
+    padding: 25px 25px 0px;
+    width: 100%;
+    border: 3px solid #CCCCCC;
+    margin: 0 0 30px;
+}
+
+
+/* ---------- Compra-confirmacion --------- */
+ul.detalles{
+    float: none;
+    display: block;
+    width: 100%
+}
+
+li.detsuscripcion{
+    float: left;
+    width: 200px;
+    text-align: right;
+    margin: 0 20px 0 0;
+    font-weight: bold;
+}
+
+ul.ventajas{
+    width: 100%;
+}
+
+ul.ventajas li{
+    list-style: square outside none;
+    margin: 0 20px 10px;
+}
+
+#codigopromo{
+    background-color: #333333;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 20px 20px 2px;
+    font-size: 110%;
+    text-align: center;
+}
+
+#codigopromo a{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+#aceptarlegales {
+    border-top: 1px solid #CCCCCC;
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
+#aceptarlegales p{
+    margin: 0 ;
+    
+}
+
+/* ---------- Compra-error --------- */
+.Error div.contenido{
+    text-align: center;
+}
+
+body.Error div.contenido h2{
+    border: none;
+}
+
+/* ---------- Feedback --------- */
+.Espera div.contenido{
+    text-align: center;
+}
+
+div#progressBar{
+    height: 300px;
+    padding: 50px 0 0;
+}
+
+/* ============================== CALENDARIO =========================== */
+
+#calendarDiv {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    font-size: 10px;
+    padding: 1px 1px 20px;
+    position: absolute;
+    visibility: hidden;
+    width: 205px;
+}
+#calendarDiv span, #calendarDiv img {
+    float: left;
+}
+#calendarDiv .selectBox, #calendarDiv .selectBoxOver {
+    cursor: pointer;
+    line-height: 12px;
+    padding: 1px 1px 1px 2px;
+}
+#calendarDiv .selectBoxTime, #calendarDiv .selectBoxTimeOver {
+    cursor: pointer;
+    line-height: 12px;
+    padding: 1px 1px 1px 2px;
+}
+#calendarDiv td {
+    font-size: 10px;
+    margin: 0;
+    padding: 3px;
+}
+#calendarDiv .selectBox {
+    border: 1px solid #666666;
+    color: #FFFFFF;
+    position: relative;
+}
+#calendarDiv .selectBoxOver {
+    background-color: #666666;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    position: relative;
+}
+#calendarDiv .selectBoxTime {
+    border: 1px solid #333333;
+    color: #666666;
+    position: relative;
+}
+#calendarDiv .selectBoxTimeOver {
+    border: 1px solid #666666;
+    color: #333333;
+    position: relative;
+}
+#calendarDiv .topBar {
+    background-color: #333333;
+    height: 20px;
+    padding: 2px;
+}
+#calendarDiv .activeDay {
+    background-color: #CCCCCC;
+}
+#calendarDiv .dominusDay {
+    color: #FF0000;
+}
+#calendarDiv .todaysDate {
+    background-color: #CCCCCC;
+    bottom: 0;
+    height: 17px;
+    line-height: 17px;
+    padding: 2px;
+    position: absolute;
+    text-align: center;
+    width: 201px;
+}
+#calendarDiv .todaysDate div {
+    float: left;
+}
+#calendarDiv .timeBar {
+    background-color: #CCCCCC;
+    color: #FFFFFF;
+    height: 17px;
+    line-height: 17px;
+    position: absolute;
+    right: 0;
+    width: 72px;
+}
+#calendarDiv .timeBar div {
+    float: left;
+    margin-right: 1px;
+}
+#calendarDiv .monthYearPicker {
+    background-color: #CCCCCC;
+    border: 1px solid #AAAAAA;
+    color: #666666;
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 15px;
+    z-index: 1000;
+}
+#calendarDiv #monthSelect {
+    width: 70px;
+}
+#calendarDiv .monthYearPicker div {
+    clear: both;
+    cursor: pointer;
+    float: none;
+    margin: 1px;
+    padding: 1px;
+}
+#calendarDiv .monthYearActive {
+    background-color: #666666;
+    color: #CCCCCC;
+}
+#calendarDiv td {
+    cursor: pointer;
+    text-align: right;
+}
+#calendarDiv .topBar img {
+    cursor: pointer;
+    margin: 0 1px;
+}
+#calendarDiv .topBar div {
+    float: left;
+    margin-right: 2px;
+}
+
+/* ============================== CONTRATOS =========================== */
+
+#listado_facturas table th, #listado_facturas table tr td{
+    border-right: 1px solid #CCCCCC;
+    padding: 5px 10px;
+    text-align: center;
+    width: 200px;
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 90%;
+}
+#listado_facturas table th, #tablactivos th, #tcaducados th, #tpendientes th{
+    font-weight: bold;
+    background-color: #F2F2F2;
+}
+
+#tablactivos th, #tablactivos tr td, #tcaducados th, #tcaducados tr td, #tpendientes th, #tpendientes tr td{
+    border-right: 1px solid #CCCCCC;
+    padding: 5px 10px;
+    text-align: center;
+    width: 10%;
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 90%;
+}
+table {
+    margin: 0 0 60px;
+    border: 1px solid #CCCCCC;
+}
+
+.subtabla{
+    border: none !important;
+}
+
+.btn_centrar{
+    margin: 20px 0 0;
+    text-align: center;
+}
+
+.notas{
+    background: none repeat scroll 0 0 #333333;
+    color: #FFFFFF;
+    padding: 2px;
+}
+
+td.nombre_pack a{
+    color:#3C81A2;
+    background-color: #F2F2F2;
+    padding: 0px 5px;
+    border: none;
+}
+/* ============================== ALTERTAS Y NEWS =========================== */
+
+.opciones_personalizacion{
+    padding: 0 0 40px 40px;
+}
+.opciones_personalizacion p{
+    margin-bottom: 5px;
+}
+.bt_alertas{
+    margin: 5px auto 500px;
+    display: inline;
+}
+#fboletines ul li{
+    margin-bottom: 18px;
+}
+#fboletines ul{
+    width: 100%;
+}
+
+#fboletines #personalizacion h6{
+    font: 120% "Roboto Condensed",Arial,sans-serif;
+    width: 100%;
+    margin-bottom: 5px;
+    color: #000000;
+}
+input.btn-notificaciones, input.btn-notificaciones-des{
+    color:#3C81A2;
+    background-color: #F2F2F2;
+    padding: 5px;
+    border: none;
+}
+
+input.btn-notificaciones:hover, input.btn-notificaciones-des:hover{
+    color:#990044;
+    border: none;
+}
+
+.boletinorbyt, .btn_darsebaja{
+    background-color: #F2F2F2;
+    padding: 5px;
+}
+/* ============================== DATOS PAGO =========================== */
+table.popcvv{
+    border: none;
+}
+table.popcvv table{
+    border: none;
+}
+
+/* ============================== POP UP =========================== */
+ .popup-background{
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    }
+
+.popup {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #D5D5D5;
+    color: #656565;
+    font-size: 11px;
+    margin: 20px auto;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    text-align: left;
+    width: 1020px;
+    z-index: 101;
+}
+
+.text-bold{
+    font-weight: bold;
+    font-size: 120%;
+    margin-bottom: 4px;
+}
+
+.popup-interior-sub{
+    margin: 0 0 0 20px;
+    font-size: 100%;
+}
+
+#conlegales .popup p{
+    margin-bottom: 5px;
+}
+
+.universosckeck {
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    padding: 10px 0 0;
+}
+
+/* ============================== COMPRA ORBYT =========================== */
+.txt_precio span{
+    font: 120% "Open Sans",Arial,sans-serif;
+    font-weight: bold;
+}
+
+#botones_exito .btn_center{
+    margin: 30px;
+}
+
+/* ============================== TEXTOS LEGALES =========================== */
+ul.normal{
+    float: none;
+    display: inline;
+}
+ul.normal li{
+    list-style: square outside none;
+    margin: 0 0 3px 20px;
+}
+
+#grupo th, .cookies th {
+    border-right: 1px solid #CCCCCC;
+    padding: 5px 10px;
+    text-align: center;
+    width: 50%;
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 90%;
+    font-weight: bold;
+    background-color: #F2F2F2;
+}
+
+  
+#grupo tr td, .cookies tr td{
+    border-right: 1px solid #CCCCCC;
+    padding: 5px 10px;
+    text-align: center;
+	width: 50%;
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 90%;
+	
+}
+
+
+/* ============================== Política de COOKIES =========================== */
+
+.cookies th 
+{    
+    width: auto;
+	
+}
+  
+.cookies tr td
+{
+  
+	width: auto;
+
+}
+.cookies tr td
+{
+    width: auto;
+	text-align: left;
+}
+.cookies th.propias
+{
+	background-color:#CCC;
+	color:#666;
+}
+.cookies th.terceros
+{
+	background-color:#CCC;
+	color:#666;
+}
+.asterisco
+{
+	color:#F00;
+}
+
+.cookies tr td.necesarias
+{
+  
+	background-color:#EDE0F8;
+
+}
+
+.cookies tr td.publicidad
+{
+  
+	background-color:#FDE0FE;
+
+}
+.cookies tr td.publicidadBis
+{
+  
+	background-color:#FDE7FE;
+
+}
+.cookies tr td.analiticas
+{
+  
+	background-color:#CFC;
+
+}
+.cookies tr td.analiticasBis
+{
+  
+	background-color:#DFFFDF;
+
+}
+
+.cookies tr td.comportamental
+{
+  
+	background-color: #D0E3F2;
+
+}
+.cookies tr td.comportamentalBis
+{
+  
+	background-color: #E6EDFF;
+
+}
+#contenedor {
+  width: 1029px;
+  margin: 0 auto;
+  text-align: left;
+  overflow: visible;
+  position: relative;
+  padding-bottom: 20px;
+  background: #fff;
+}
